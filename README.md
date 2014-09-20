@@ -5,9 +5,7 @@
 Amber is an elegant templating engine for Go Programming Language
 It is inspired from HAML and Jade
 
-###
-
-解决自定义函数问题
+### 解决自定义函数问题
 
 添加自定义函数：
 
