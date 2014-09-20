@@ -5,6 +5,17 @@
 Amber is an elegant templating engine for Go Programming Language
 It is inspired from HAML and Jade
 
+###
+
+解决自定义函数问题
+
+添加自定义函数：
+    amber.FuncMap["showDate"] = func(timeUnix int64) string {
+        return time.Unix(timeUnix, 0).Format("2006-01-02 15:04:05")
+    }
+页面调用：
+    div #{showDate($timeUnix)}
+
 ### Tags
 
 A tag is simply a word:
